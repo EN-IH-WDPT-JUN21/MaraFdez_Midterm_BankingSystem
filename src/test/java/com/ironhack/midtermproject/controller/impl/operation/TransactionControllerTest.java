@@ -166,8 +166,10 @@ class TransactionControllerTest {
         assertTrue(result.getResponse().getContentAsString().contains("50"));
     }
 
-    // Unfortunately, H2 does not support the interval data type, so INTERVAL 1 DAY is not understood
-    // and throws an error. This makes createTransaction() untestable.
+    // Unfortunately, H2 does not support the interval data type in its queries,
+    // so INTERVAL 1 DAY, used in TransactionRepository, is not understood and throws an error.
+    // This makes createTransaction() untestable.
+
  /*   @Test
     void createTransaction_SuccessfullyProcessed() throws Exception {
         TransactionDTO transactionDTO = new TransactionDTO(
