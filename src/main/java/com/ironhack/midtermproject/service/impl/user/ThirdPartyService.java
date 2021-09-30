@@ -7,7 +7,7 @@ import com.ironhack.midtermproject.dao.account.Savings;
 import com.ironhack.midtermproject.dao.account.StudentChecking;
 import com.ironhack.midtermproject.dao.users.ThirdParty;
 import com.ironhack.midtermproject.enums.TransactionType;
-import com.ironhack.midtermproject.repository.TransactionRepository;
+import com.ironhack.midtermproject.repository.operation.TransactionRepository;
 import com.ironhack.midtermproject.repository.account.CheckingRepository;
 import com.ironhack.midtermproject.repository.account.SavingsRepository;
 import com.ironhack.midtermproject.repository.account.StudentCheckingRepository;

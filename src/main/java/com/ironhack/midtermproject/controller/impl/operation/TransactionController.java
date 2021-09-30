@@ -1,9 +1,9 @@
-package com.ironhack.midtermproject.controller.impl;
+package com.ironhack.midtermproject.controller.impl.operation;
 
 import com.ironhack.midtermproject.controller.dto.TransactionDTO;
 import com.ironhack.midtermproject.controller.interfaces.ITransactionController;
-import com.ironhack.midtermproject.dao.Transaction;
-import com.ironhack.midtermproject.repository.TransactionRepository;
+import com.ironhack.midtermproject.dao.operation.Transaction;
+import com.ironhack.midtermproject.repository.operation.TransactionRepository;
 import com.ironhack.midtermproject.service.impl.user.AccountHolderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

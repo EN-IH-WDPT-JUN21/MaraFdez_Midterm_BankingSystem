@@ -12,9 +12,9 @@ DROP TABLE IF EXISTS third_party;
 -- for admins password is: adm1n
 -- for accountHolders password is: p4ssword
 INSERT INTO user(id, name, username, password) VALUES
-(default, 'administrator', 'admin', '$2a$10$KraexumQ2EYuX5ALrEhJV./7VvGLnKjLYOMSMjF.efp/uCdZT9E2q' ),
+(default, 'administrator', 'admin', '$2a$10$91cj77UnF9nWLqQppEJHoe1oSKRvNse3rUc02F0TuNR2osT1GK.gm' ),
 (default, 'Alyssa Thompson', 'alysth', '$2a$10$w42M/2mWuYXiEiYhEfB2kOz.vWOiQJckNbs85xoZ5QIYU324.9/EC'),
-(default, 'Alice Fisher', 'alifish', '$2a$10$KraexumQ2EYuX5ALrEhJV./7VvGLnKjLYOMSMjF.efp/uCdZT9E2q'),
+(default, 'Alice Fisher', 'alifish', '$2a$10$91cj77UnF9nWLqQppEJHoe1oSKRvNse3rUc02F0TuNR2osT1GK.gm'),
 (default, 'Thomas Clark', 'theclark', '$2a$10$w42M/2mWuYXiEiYhEfB2kOz.vWOiQJckNbs85xoZ5QIYU324.9/EC'),
 (default, 'Anna Mugler', 'anmug', '$2a$10$w42M/2mWuYXiEiYhEfB2kOz.vWOiQJckNbs85xoZ5QIYU324.9/EC'),
 (default, 'Simon Folliard', 'simonf', '$2a$10$w42M/2mWuYXiEiYhEfB2kOz.vWOiQJckNbs85xoZ5QIYU324.9/EC'),

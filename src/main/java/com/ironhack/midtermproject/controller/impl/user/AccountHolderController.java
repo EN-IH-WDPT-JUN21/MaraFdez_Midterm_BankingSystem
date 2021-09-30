@@ -1,10 +1,7 @@
 package com.ironhack.midtermproject.controller.impl.user;
 
 import com.ironhack.midtermproject.controller.dto.AccountHolderDTO;
-import com.ironhack.midtermproject.controller.dto.TransactionDTO;
 import com.ironhack.midtermproject.controller.interfaces.user.IAccountHolderController;
-import com.ironhack.midtermproject.dao.Transaction;
-import com.ironhack.midtermproject.dao.account.Account;
 import com.ironhack.midtermproject.dao.users.AccountHolder;
 import com.ironhack.midtermproject.dao.users.User;
 import com.ironhack.midtermproject.repository.user.AccountHolderRepository;

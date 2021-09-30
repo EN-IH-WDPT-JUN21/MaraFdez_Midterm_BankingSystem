@@ -1,6 +1,6 @@
-package com.ironhack.midtermproject.repository;
+package com.ironhack.midtermproject.repository.operation;
 
-import com.ironhack.midtermproject.dao.Transaction;
+import com.ironhack.midtermproject.dao.operation.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -25,7 +25,7 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
     // as a result of the sum of each transaction made by customers in any other 24h period
     @Query(value = "SELECT SUM(transaction_amount) " +
             "FROM transaction WHERE provenance_account_id = :id " +
-            "AND transaction_date < DATE_SUB(now(), INTERVAL 24 HOUR)\n" +
+            "AND transaction_date < DATE_SUB(now(), INTERVAL 24 HOUR) " +
             "GROUP BY transaction_date ORDER BY 1 DESC LIMIT 1", nativeQuery = true)
     Optional<BigDecimal> findMaxTransactions24hPeriod(@Param("id") Long id);
 

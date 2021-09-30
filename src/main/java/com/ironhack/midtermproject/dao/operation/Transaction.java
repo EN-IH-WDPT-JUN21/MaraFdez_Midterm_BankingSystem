@@ -1,4 +1,4 @@
-package com.ironhack.midtermproject.dao;
+package com.ironhack.midtermproject.dao.operation;
 
 import com.ironhack.midtermproject.utils.Money;
 import lombok.AllArgsConstructor;
